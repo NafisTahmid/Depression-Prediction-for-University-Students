@@ -361,7 +361,7 @@ def main():
                                         
                                          '0' for 'No'
                                         ''')
-    coffee_person = st.text_input(label="", placeholder= "")
+    coffee_person = st.text_input(label="Are you a coffee person?", placeholder= "")
 
     substance_addiction_subheader = st.subheader("Are you addicted to any kind of addictive substances?")
     substance_addiction_markdown = st.markdown('''
