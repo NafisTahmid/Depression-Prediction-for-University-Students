@@ -5,7 +5,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 #Loading the saved model
-loaded_model = pickle.load(open('C:/Users/nafis/Downloads/depression_dataset_trained_model_updated.sav', "rb"))
+loaded_model = pickle.load(open('Depression-Prediction-for-University-Students
+/depression_dataset_trained_model_updated.sav', "rb"))
 
 #Create a function for prediction
 
