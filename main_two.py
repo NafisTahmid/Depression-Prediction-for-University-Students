@@ -413,7 +413,7 @@ def main():
                         int(social_life_satisfaction), int(age), int(university_year),
                         int(family_members), int(sleep_duration)]
 
-        depression = depression_prediction(user_inputs)
+    depression = depression_prediction(user_inputs)
 
     st.success(depression)
 
