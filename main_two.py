@@ -398,8 +398,11 @@ def main():
     #Creating a button for prediction
     if st.button('Depression Test Result'):
         depression = depression_prediction([gender, number_of_children, home_town, income_source, academic_performance_satisfaction, physical_disabilities, road_accident_issue, childhood_trauma, taking_medication, is_a_religious_person, participant_in_indoor_fun_activity, sports_or_gym_regularly, coffee_person, substance_addiction, educational_background, relationship_status, monthly_income_encoded, monthly_living_expense, social_gathering_time, social_media_time, social_life_satisfaction, age, university_year, family_members, sleep_duration])
+    
 
     st.success(depression)
+
+    
 
 if __name__ == '__main__':
     main()
