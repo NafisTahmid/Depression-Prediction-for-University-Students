@@ -311,11 +311,13 @@ def main():
         global social_life_satisfaction, social_life_satisfaction_input
 
         with st.expander("How satisfied are you with your social life?(Click to Expand)"):
-            social_life_satisfaction_input = st.radio("", ("Disappointed", "Not Safisfied", "Satisfied", "Very Satisfied"))
+            social_life_satisfaction_input = st.radio("", ("Disappointed", "Not Safisfied", "Neutral", "Satisfied", "Very Satisfied"))
             if social_life_satisfaction_input == "Disappointed":
                 social_life_satisfaction = 0
             elif social_life_satisfaction_input == "Not Satisfied":
                 social_life_satisfaction = 1
+            elif social_life_satisfaction_input == "Neutral":
+                social_life_satisfaction = 4
             elif social_life_satisfaction_input == "Satisfied":
                 social_life_satisfaction = 2
             elif social_life_satisfaction_input == "Very Satisfied":
