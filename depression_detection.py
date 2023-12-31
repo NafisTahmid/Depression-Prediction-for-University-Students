@@ -4,6 +4,8 @@ import streamlit as st
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
+st.set_page_config(page_title="Depression Test for University Students", page_icon='images/5859961_depression_disorder_health_mental_psychology_icon.png')
+
 #Loading the saved model
 loaded_model = pickle.load(open('C:/Users/nafis/Downloads/depression_dataset_trained_model_updated.sav', "rb"))
 
