@@ -11,7 +11,7 @@ import pandas as pd
 from PyPDF2 import PdfReader
 #import pdfplumber
 
-st.set_page_config(page_title="Depression Test for University Students", page_icon='images/5859961_depression_disorder_health_mental_psychology_icon.png')
+st.set_page_config(page_title="Depression Test for University Students", page_icon='images/897242_brain_mind_thinking_train_icon.png')
 
 def load_image(image_file):
     img = Image.open(image_file)
