@@ -116,7 +116,7 @@ def main():
                 university_year =2
             elif university_year_input == "Final Year":
                 university_year = 3
-            elif university_year_input == "FInal Year(Medical)":
+            elif university_year_input == "Final Year(Medical)":
                 university_year = 4
             elif university_year_input == "Post-Graduation":
                 university_year = 5
