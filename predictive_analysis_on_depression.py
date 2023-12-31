@@ -25,9 +25,14 @@ def read_pdf(file):
         all_page_text += page.extract_text()
 
     return all_page_text
+    
+github_url = 'https://github.com/NafisTahmid/Depression-Prediction-for-University-Students/raw/main/depression_dataset_trained_model_updated.sav'
+
+response = requests.get(github_url)
 
 #Loading the saved model
-loaded_model = pickle.load(open('C:/Users/nafis/Downloads/depression_dataset_trained_model_updated.sav', "rb"))
+# loaded_model = pickle.load(open("https://github.com/NafisTahmid/Depression-Prediction-for-University-Students/blob/main/depression_dataset_trained_model_updated.sav", "rb"))
+loaded_model = pickle.loads(response.content)
 
 #Create a function for prediction
 
