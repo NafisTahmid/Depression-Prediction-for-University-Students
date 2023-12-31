@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import pandas as pd
 from PyPDF2 import PdfReader
-import pdfplumber
+#import pdfplumber
 
 st.set_page_config(page_title="Depression Test for University Students", page_icon='images/5859961_depression_disorder_health_mental_psychology_icon.png')
 
