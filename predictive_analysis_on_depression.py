@@ -271,7 +271,7 @@ def main():
             social_gathering_time = 0
         elif social_gathering_time_input == "Rarely go to social gatherings":
             social_gathering_time = 1
-        elif social_gathering_time_input == "Weekends Only":
+        elif social_gathering_time_input == "Weekends only":
             social_gathering_time = 2
             
         global participant_in_indoor_fun_activity
