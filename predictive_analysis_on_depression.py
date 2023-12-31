@@ -202,7 +202,7 @@ def main():
             elif monthly_income_input == "Nearly 20K":
                 monthly_income = 1
 
-      global monthly_living_expense, monthly_living_expense_input
+        global monthly_living_expense, monthly_living_expense_input
         with st.expander("What is your monthly living expense?(Click to Expand)"):
             monthly_living_expense_input = st.radio("", ("Nearly 5K", "Nearly 10K", "Nearly 20K", "Nearly 30k to 40K", "Nearly 50K to 60K", "Nearly 70K to 80K", "Nearly 100K",  "More than 100K"))
 
