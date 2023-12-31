@@ -220,7 +220,7 @@ def main():
                 monthly_living_expense = 7
             elif monthly_living_expense_input == "Nearly 100K":
                 monthly_living_expense = 1
-            elif monthly_living_expense_input == "More Than 100K":
+            elif monthly_living_expense_input == "More than 100K":
                 monthly_living_expense = 0
                 
         global academic_performance_satisfaction
