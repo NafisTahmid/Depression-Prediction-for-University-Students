@@ -67,7 +67,6 @@ def main():
 
     if choice == "Test Depression":
         st.subheader("Test Your Depression Result")
-        #############################################################################################
         global gender
         gender_input = st.radio("What is your gender?", ("Female", "Male"))
         if gender_input == "Female":
@@ -76,70 +75,68 @@ def main():
             gender = 0
             
         global age,age_input
-        with st.expander("What is your age? (Click to Expand)"):
-            age_input = st.radio("",("18", "19", "20", "21", "22", "23", "24", "25", "26", "27 to 29", "30", "More than 30"))
-            if age_input == "18":
-                age = 0
-            elif age_input == "19":
-                age = 1
-            elif age_input == "20":
-                age = 2
-            elif age_input == "21":
-                age = 3
-            elif age_input == "22":
-                age = 4
-            elif age_input == "23":
-                age = 5
-            elif age_input == "24":
-                age = 6
-            elif age_input == "25":
-                age = 7
-            elif age_input == "26":
-                age = 7
-            elif age_input == "27 to 29":
-                age = 8
-            elif age_input == "30":
-                age = 9
-            elif age_input == "More than 30":
-                age = 10
+        age_input = st.selectbox("What is your age?", ("18", "19", "20", "21", "22", "23", "24", "25", "26", "27 to 29", "30", "More than 30"))
+    
+        if age_input == "18":
+            age = 0
+        elif age_input == "19":
+            age = 1
+        elif age_input == "20":
+            age = 2
+        elif age_input == "21":
+            age = 3
+        elif age_input == "22":
+            age = 4
+        elif age_input == "23":
+            age = 5
+        elif age_input == "24":
+            age = 6
+        elif age_input == "25":
+            age = 7
+        elif age_input == "26":
+            age = 7
+        elif age_input == "27 to 29":
+            age = 8
+        elif age_input == "30":
+            age = 9
+        elif age_input == "More than 30":
+            age = 10
         
                 
         global university_year_input, university_year
-        with st.expander("Which year of university are you in?(Click to Expand)"):
-            university_year_input = st.radio("", ("First Year", "Second Year", "Third Year", "Final Year", "Final Year(Medical)", "Post-Graduation"))
-
-            if university_year_input == "First Year":
-                university_year = 0
-            elif university_year_input == "Second Year":
-                university_year = 1
-            elif university_year_input == "Third Year":
-                university_year =2
-            elif university_year_input == "Final Year":
-                university_year = 3
-            elif university_year_input == "Final Year(Medical)":
-                university_year = 4
-            elif university_year_input == "Post-Graduation":
-                university_year = 5
+        university_year_input = st.selectbox("Which year of university are you in?", ("First Year", "Second Year", "Third Year", "Final Year", "Final Year(Medical)", "Post-Graduation"))
+        if university_year_input == "First Year":
+            university_year = 0
+        elif university_year_input == "Second Year":
+            university_year = 1
+        elif university_year_input == "Third Year":
+            university_year =2
+        elif university_year_input == "Final Year":
+            university_year = 3
+        elif university_year_input == "FInal Year(Medical)":
+            university_year = 4
+        elif university_year_input == "Post-Graduation":
+            university_year = 5
                 
+        
+              
         global family_members_input, family_members
-
-        with st.expander("How many members are there in your family?(Click to Expand)"):
-            family_members_input = st.radio("", ("One", "Two", "Three", "Four", "Five", "Six", "More than Six members"))
-
-            if family_members_input == "One":
-                family_members = 0
-            elif family_members_input == "Two":
-                family_members = 1
-            elif family_members_input == "Three":
-                family_members = 2
-            elif family_members_input == "Four":
-                family_members = 5
-            elif family_members_input == "Five":
-                family_members = 4
-            elif family_members_input == "Six":
-                family_members = 3
-            elif family_members_input == "More than Six members":
-                family_members = 6
+        
+        family_members_input = st.selectbox("How many members are there in your family?", ("One", "Two", "Three", "Four", "Five", "Six", "More than Six members"))
+        if family_members_input == "One":
+            family_members = 0
+        elif family_members_input == "Two":
+            family_members = 1
+        elif family_members_input == "Three":
+            family_members = 2
+        elif family_members_input == "Four":
+            family_members = 5
+        elif family_members_input == "Five":
+            family_members = 4
+        elif family_members_input == "Six":
+            family_members = 3
+        elif family_members_input == "More than Six members":
+            family_members = 6
 
         global educational_background
         educational_background_input = st.radio("What is your educational background?", ("Bangla Medium", "Madrasah", "English Medium"))
@@ -160,21 +157,20 @@ def main():
             relationship_status = 1
             
         global number_of_children, number_of_children_input
-
-        with st.expander("If you have any children, how many do you have?(Click to Expand)"):
-            number_of_children_input = st.radio("", ("No Children", "One", "Two", "Three", "Four", "More than Four"))
-            if number_of_children_input == "No Children":
-                number_of_children = 0
-            elif number_of_children_input == "One":
-                number_of_children = 1
-            elif number_of_children_input == "Two":
-                number_of_children = 2
-            elif number_of_children_input == "Three":
-                number_of_children = 3
-            elif number_of_children_input == "Four":
-                number_of_children = 4
-            elif number_of_children_input == "More than Four":
-                number_of_children = 5
+        
+        number_of_children_input = st.selectbox("If you have any children, how many do you have?", ("No Children", "One", "Two", "Three", "Four", "More than Four"))
+        if number_of_children_input == "No Children":
+            number_of_children = 0
+        elif number_of_children_input == "One":
+            number_of_children = 1
+        elif number_of_children_input == "Two":
+            number_of_children = 2
+        elif number_of_children_input == "Three":
+            number_of_children = 3
+        elif number_of_children_input == "Four":
+            number_of_children = 4
+        elif number_of_children_input == "More than Four":
+            number_of_children = 5
                 
         global home_town
         home_town_input = st.radio("Were you brought up in the capital city of Bangladesh?", ("Yes", "No"))
@@ -191,37 +187,36 @@ def main():
             income_source = 0
 
         global monthly_income
-        with st.expander("What is your monthly income?(Click to Expand)"):
-            monthly_income_input = st.radio("", ("Not earning as of now", "Nearly 5K", "Nearly 10K", "Nearly 20K"))
-            if monthly_income_input == "Not earning as of now":
-                monthly_income = 4
-            elif monthly_income_input == "Nearly 5K":
-                monthly_income = 3
-            elif monthly_income_input == "Nearly 10K":
-                monthly_income = 0
-            elif monthly_income_input == "Nearly 20K":
-                monthly_income = 1
+        monthly_income_input = st.selectbox("What is your monthly income?", ("Not earning as of now", "Nearly 5K", "Nearly 10K", "Nearly 20K"))
+        
+        if monthly_income_input == "Not earning as of now":
+            monthly_income = 4
+        elif monthly_income_input == "Nearly 5K":
+            monthly_income = 3
+        elif monthly_income_input == "Nearly 10K":
+            monthly_income = 0
+        elif monthly_income_input == "Nearly 20K":
+            monthly_income = 1
 
         global monthly_living_expense, monthly_living_expense_input
-        with st.expander("What is your monthly living expense?(Click to Expand)"):
-            monthly_living_expense_input = st.radio("", ("Nearly 5K", "Nearly 10K", "Nearly 20K", "Nearly 30K to 40K", "Nearly 50K to 60K", "Nearly 70K to 80K", "Nearly 100K",  "More than 100K"))
+        monthly_living_expense_input = st.selectbox("What is your monthly living expense?", ("Nearly 5K", "Nearly 10K", "Nearly 20K", "Nearly 30K to 40K", "Nearly 50K to 60K", "Nearly 70K to 80K", "Nearly 100K",  "More than 100K"))
 
-            if monthly_living_expense_input == "Nearly 5K":
-                monthly_living_expense = 5
-            elif monthly_living_expense_input == "Nearly 10K":
-                monthly_living_expense = 2
-            elif monthly_living_expense_input == "Nearly 20K":
-                monthly_living_expense = 3
-            elif monthly_living_expense_input == "Nearly 30K to 40K":
-                monthly_living_expense = 4
-            elif monthly_living_expense_input == "Nearly 50K to 60K":
-                monthly_living_expense = 6
-            elif monthly_living_expense_input == "Nearly 70K to 80K":
-                monthly_living_expense = 7
-            elif monthly_living_expense_input == "Nearly 100K":
-                monthly_living_expense = 1
-            elif monthly_living_expense_input == "More than 100K":
-                monthly_living_expense = 0
+        if monthly_living_expense_input == "Nearly 5K":
+            monthly_living_expense = 5
+        elif monthly_living_expense_input == "Nearly 10K":
+            monthly_living_expense = 2
+        elif monthly_living_expense_input == "Nearly 20K":
+            monthly_living_expense = 3
+        elif monthly_living_expense_input == "Nearly 30K to 40K":
+            monthly_living_expense = 4
+        elif monthly_living_expense_input == "Nearly 50K to 60K":
+            monthly_living_expense = 6
+        elif monthly_living_expense_input == " Nearly 70K to 80K":
+            monthly_living_expense = 7
+        elif monthly_living_expense_input == "Nearly 100K":
+            monthly_living_expense = 1
+        elif monthly_living_expense_input == "More than 100K":
+            monthly_living_expense = 0
                 
         global academic_performance_satisfaction
         academic_performance_satisfaction_input =st.radio("Are you currently satisfied with your academic performance?", ("Yes", "No"))
@@ -288,40 +283,36 @@ def main():
         elif sports_or_gym_regularly_input == "No":
             sports_or_gym_regularly = 0
             
-        global social_media_time, social_media_time__input
+        global social_media_time
+        
+        social_media_time_input = st.selectbox("How much time do you spend on social media on a daily basis?", ("Less than thirty minutes", "One hour", "Two hours", "Three hours", "Four hours", "Five hours", "More than Five hours"))
 
-        with st.expander("How much time do you spend on social media on a daily basis?"):
-            social_media_time_input = st.radio("", ("Less than thirty minutes", "One hour", "Two hours", "Three hours", "Four hours", "Five hours", "More than Five hours"))
-
-            if social_media_time_input == "Less than thirty minutes":
-                social_media_time = 5
-            elif social_media_time_input == "One hour":
-                social_media_time = 0
-            elif social_media_time_input == "Two hours":
-                social_media_time = 1
-            elif social_media_time_input == "Three hours":
-                social_media_time = 2
-            elif social_media_time_input == "Four hours":
-                social_media_time = 3
-            elif social_media_time_input == "Five hours":
-                social_media_time = 4
-            elif social_media_time_input == "More than Five hours":
-                social_media_time = 6
+        if social_media_time_input == "Less than thirty minutes":
+            social_media_time = 5
+        elif social_media_time_input == "One hour":
+            social_media_time = 0
+        elif social_media_time_input == "Two hours":
+            social_media_time = 1
+        elif social_media_time_input == "Three hours":
+            social_media_time = 2
+        elif social_media_time_input == "Four hours":
+            social_media_time = 3
+        elif social_media_time_input == "Five hours":
+            social_media_time = 4
+        elif social_media_time_input == "More than Five hours":
+            social_media_time = 6
                 
         global social_life_satisfaction, social_life_satisfaction_input
-
-        with st.expander("How satisfied are you with your social life?(Click to Expand)"):
-            social_life_satisfaction_input = st.radio("", ("Disappointed", "Not Safisfied", "Neutral", "Satisfied", "Very Satisfied"))
-            if social_life_satisfaction_input == "Disappointed":
-                social_life_satisfaction = 0
-            elif social_life_satisfaction_input == "Not Satisfied":
-                social_life_satisfaction = 1
-            elif social_life_satisfaction_input == "Neutral":
-                social_life_satisfaction = 4
-            elif social_life_satisfaction_input == "Satisfied":
-                social_life_satisfaction = 2
-            elif social_life_satisfaction_input == "Very Satisfied":
-                social_life_satisfaction = 3
+        
+        social_life_satisfaction_input = st.selectbox("How satisfied are you with your social life?",("Disappointed", "Not Satisfied", "Satisfied", "Very Satisfied"))
+        if social_life_satisfaction_input == "Disappointed":
+            social_life_satisfaction = 0
+        elif social_life_satisfaction_input == "Not Satisfied":
+            social_life_satisfaction = 1
+        elif social_life_satisfaction_input == "Satisfied":
+            social_life_satisfaction = 2
+        elif social_life_satisfaction_input == "Very Satisfied":
+            social_life_satisfaction = 3
 
         global chai_person
         chai_person_input = st.radio("Do you consider yourseld a tea/coffee person?", ("Yes", "No"))
@@ -337,23 +328,22 @@ def main():
         elif substance_addiction_input == "No":
             substance_addiction = 0
             
-        global sleep_duration
-        with st.expander("How long do you sleep every night?(Click to Expand)"):
-            sleep_duration_input = st.radio("", ("Three hours", "Four hours", "Five hours", "Six hours", "Seven hours", "Eight hours", "More than Nine hours"))
-            if sleep_duration_input == "Three hours":
-                sleep_duration = 0
-            elif sleep_duration_input == "Four hours":
-                sleep_duration = 1
-            elif sleep_duration_input == "Five hours":
-                sleep_duration = 2
-            elif sleep_duration_input == "Six hours":
-                sleep_duration = 3
-            elif sleep_duration_input == "Seven hours":
-                sleep_duration = 4
-            elif sleep_duration_input == "Eight hours":
-                sleep_duration = 5
-            elif sleep_duration_input == "More than Nine hours":
-                sleep_duration =7
+        sleep_duration_input = st.selectbox("How long do you sleep every night?", ("Three hours", "Four hours", "Five hours", "Six hours", "Seven hours", "Eight hours", "More than Nine hours"))
+        
+        if sleep_duration_input == "Three hours":
+            sleep_duration = 0
+        elif sleep_duration_input == "Four hours":
+            sleep_duration = 1
+        elif sleep_duration_input == "Five hours":
+            sleep_duration = 2
+        elif sleep_duration_input == "Six hours":
+            sleep_duration = 3
+        elif sleep_duration_input == "Seven hours":
+            sleep_duration = 4
+        elif sleep_duration_input == "Eight hours":
+            sleep_duration = 5
+        elif sleep_duration_input == "More than Nine hours":
+            sleep_duration =7
 
 
         #Code for prediction
@@ -362,9 +352,17 @@ def main():
         #Creating a button for prediction
         if st.button('Depression Test Result'):
             depression = depression_prediction([gender, number_of_children, home_town, income_source, academic_performance_satisfaction, physical_disabilities, road_accident_issue, childhood_trauma, taking_medication, is_a_religious_person, participant_in_indoor_fun_activity, sports_or_gym_regularly, chai_person, substance_addiction, educational_background, relationship_status, monthly_income, monthly_living_expense, social_gathering_time, social_media_time, social_life_satisfaction, age, university_year, family_members, sleep_duration])
+            
+        print(depression)
         
 
-        st.success(depression)
+        # st.success(depression)
+        st.warning(depression)
+        # if depression == [1]:
+        #     st.error("You're depressed")
+        # else:
+        #     st.success("You're not depressed")
+            
 
     elif choice == "Report":
         st.subheader("Report")
